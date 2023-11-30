@@ -49,9 +49,9 @@ You can test the API endpoints using Insomnia or a similar tool.
 
 #### GET Routes
 
-To retrieve user data, make a GET request to `http://localhost:3001/api/users`.
+- To retrieve user data, make a GET request to `http://localhost:3001/api/users`.
 
-To retrieve thought data, make a GET request to `http://localhost:3001/api/thoughts`.
+- To retrieve thought data, make a GET request to `http://localhost:3001/api/thoughts`.
 
 Example: GET `http://localhost:3001/api/users` should return a formatted JSON response containing all user data.
 
@@ -59,11 +59,11 @@ Example: GET `http://localhost:3001/api/users` should return a formatted JSON re
 
 - To create a new user, make a POST request to `http://localhost:3001/api/users`.
 
-To create a new thought, make a POST request to `http://localhost:3001/api/thoughts`.
+- To create a new thought, make a POST request to `http://localhost:3001/api/thoughts`.
 
-To add a new friend to a user, make a POST request to `http://localhost:3001/api/users/{userId}/friends/{friendId}`, where `{friendId}` is the ID of an existing user who has been added to another by his/her specified {userId} . 
+- To add a new friend to a user, make a POST request to `http://localhost:3001/api/users/{userId}/friends/{friendId}`, where `{friendId}` is the ID of an existing user who has been added to another by his/her specified {userId} . 
 
-To create a reaction to a thought, make a POST request to `http://localhost:3001/api/thoughts/{thoughtId}/reactions`, where `{thoughtId}` is the ID of an existing thought. 
+- To create a reaction to a thought, make a POST request to `http://localhost:3001/api/thoughts/{thoughtId}/reactions`, where `{thoughtId}` is the ID of an existing thought. 
 
 Example: POST `http://localhost:3001/api/users` should allow you to create a new user by sending the required user data in the request body.
 ```json
