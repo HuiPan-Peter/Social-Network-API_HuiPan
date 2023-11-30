@@ -31,7 +31,7 @@ All GET,POST,PUT and DELETE routes for Users, Thoughts, Friends, Reactions.
 
 ## Usage
 
-For more information - Please visit the following videos on how the application works.
+For more information - Please visit the walkthrough demo on how the application works.
 [Demo Video](https://)
 
 #### Starting the Server
@@ -56,29 +56,38 @@ Example: GET `http://localhost:3001/api/users` should return a formatted JSON re
 
 #### POST Routes
 
-To create a new user, make a POST request to `http://localhost:3001/api/users`.
+- To create a new user, make a POST request to `http://localhost:3001/api/users`.
 
 To create a new thought, make a POST request to `http://localhost:3001/api/thoughts`.
+
+To add a new friend to a user, make a POST request to `http://localhost:3001/api/users/{userId}/friends/{friendId}`, where `{friendId}` is the ID of an existing user who have been added to another by his/her specified {userId} . 
 
 To create a reaction to a thought, make a POST request to `http://localhost:3001/api/thoughts/{thoughtId}/reactions`, where `{thoughtId}` is the ID of an existing thought. 
 
 Example: POST `http://localhost:3001/api/users` should allow you to create a new user by sending the required user data in the request body.
+```json
+// user data
+{
+  "username": "lernantino",
+  "email": "lernantino@gmail.com"
+}
+```
 
 #### PUT Routes
 
-To update user or thought data, make a PUT request to the appropriate route.
+- To update user or thought data, make a PUT request to the appropriate route, use `http://localhost:3001/api/users/{userId}` or `http://localhost:3001/api/thoughts/{thoughtId}`;
 
 Example: PUT `http://localhost:3001/api/users/{userId}` should allow you to update user data by providing the updated data in the request body and the ID of an existing user in place of `{userId}`.
 
 #### DELETE Routes
 
-To delete a user, thought, or reaction, make a DELETE request to the appropriate route.
-Example: DELETE `http://localhost:3001/api/users/{userId}` should delete the user with the specified ID.
+To delete a user, thought, friend or reaction, make a DELETE request to the appropriate route.
+- Delete a user by its `id`: use DELETE `http://localhost:3001/api/user/{userId}`
+- Delete a thought by its `id`: use DELETE `http://localhost:3001/api/thoughts/{thoughtId}`
+- Delete a friend from a user's friend list: use DELETE `http://localhost:3001/api/users/{userId}/friends/{friendId}`
+- Delete a reaction by the `reactionId`: use DELETE `http://localhost:3001/api/thoughts/{thoughtId}/reactions/{reactionId}`
 
-Adding and Removing Friends
-To add or remove friends to a user's friend list, make a POST or DELETE request to the `http://localhost:3001/api/users/{userId}/friends/{friendId}` route.
-
-Example: POST `http://localhost:3001/api/users/{userId}/friends/{friendId}` should add the user with friendId to the friend list of the user with userId.
+Example: DELETE `http://localhost:3001/api/users/{userId}/friends/{friendId}` should delete a user with friendId from the friend list of the user with userId.
 
 ## Contributing
 
