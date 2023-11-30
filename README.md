@@ -20,9 +20,8 @@ To see how the API works by using Insomnia, see the **walk-through demonstration
 ## Application Preview
 
 All GET,POST,PUT and DELETE routes for Users, Thoughts, Friends, Reactions.
-`
+- 
 <img src="./public/walkthroughVideo&Screenshot/allRoutes.png" height="500px">
-`
 
 ## Installation
 
