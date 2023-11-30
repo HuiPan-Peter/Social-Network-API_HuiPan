@@ -6,7 +6,7 @@
 
 This is an API for a social network web application where users can share their thoughts, react to friends' thoughts, and create a friend list. It uses `Express.js` for routing, `MongoDB` for database and the `Mongoose` for object modeling. The seed data is created by using `Insomnia`.
 
-To see how the API works by using Insomnia, see the **walk-through demonstration videos** here:[Click!](https://)
+To see how the API works by using Insomnia, see the **walk-through demonstration videos** here:[Click!](https://github.com/HuiPan-Peter/Social-Network-API_HuiPan/tree/main/public/walkthroughVideo%26Screenshot)
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ To see how the API works by using Insomnia, see the **walk-through demonstration
 ## Application Preview
 
 All GET,POST,PUT and DELETE routes for Users, Thoughts, Friends, Reactions.
-<img src="./public/assets/allRoutes.png" height="500px">
+<img src="./public/walkthroughVideo&Screenshot/allRoutes.png" height="500px">
 
 ## Installation
 
@@ -32,7 +32,7 @@ All GET,POST,PUT and DELETE routes for Users, Thoughts, Friends, Reactions.
 ## Usage
 
 For more information - Please visit the walkthrough demo on how the application works.
-[Demo Video](https://)
+[Demo Video](https://github.com/HuiPan-Peter/Social-Network-API_HuiPan/tree/main/public/walkthroughVideo%26Screenshot)
 
 #### Starting the Server
 
@@ -60,7 +60,7 @@ Example: GET `http://localhost:3001/api/users` should return a formatted JSON re
 
 To create a new thought, make a POST request to `http://localhost:3001/api/thoughts`.
 
-To add a new friend to a user, make a POST request to `http://localhost:3001/api/users/{userId}/friends/{friendId}`, where `{friendId}` is the ID of an existing user who have been added to another by his/her specified {userId} . 
+To add a new friend to a user, make a POST request to `http://localhost:3001/api/users/{userId}/friends/{friendId}`, where `{friendId}` is the ID of an existing user who has been added to another by his/her specified {userId} . 
 
 To create a reaction to a thought, make a POST request to `http://localhost:3001/api/thoughts/{thoughtId}/reactions`, where `{thoughtId}` is the ID of an existing thought. 
 
