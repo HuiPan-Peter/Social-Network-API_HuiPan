@@ -20,8 +20,8 @@ To see how the API works by using Insomnia, see the **walk-through demonstration
 ## Application Preview
 
 All GET, POST, PUT, and DELETE routes for Users, Thoughts, Friends, and Reactions.
-
-<img src="./public/walkthroughVideo&Screenshot/allRoutes.png" height="500px">
+By using Insomnia to test these routes with JSON text on MongoDB.
+<img src="./public/walkthroughVideo&Screenshot/applicationPreview.png" height="500px">
 
 ## Installation
 
