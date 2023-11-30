@@ -53,7 +53,7 @@ You can test the API endpoints using Insomnia or a similar tool.
   
 - To retrieve user data by ID, make a GET request to `http://localhost:3001/api/users/{userId}` for a specified user.
 
-- To retrieve thought data, make a GET request to `http://localhost:3001/api/thoughts`.
+- To retrieve thought data, make a GET request to `http://localhost:3001/api/thoughts` for all thoughts.
   
 - To retrieve thought data by ID, make a GET request to `http://localhost:3001/api/users/{thoughtId}` for a specified thought.
 
